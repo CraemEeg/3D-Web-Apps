@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(11, 11, 11, 0.9);
+    padding: 1rem;
+    z-index: 100;
+  }
+  
+  nav ul {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    font-family: 'Roboto', sans-serif;
+    margin-right: 1rem;
+  }
+  
+  nav ul li:last-child {
+    font-family: 'Roboto', sans-serif;
+    margin-right: 0;
+  }
+  
+  nav ul li a {
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: rgb(229, 223, 223);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+  }
+  
+  nav ul li a:hover {
+    color: #999;
+  }
+  
+  
+  main {
+    margin-top: 5rem;
+  }
+  
+  .hero,
+  .content {
+    padding: 5rem 0;
+    text-align: center;
+  }
+  
+  .hero {
+    background-color: rgba(255, 255, 255, 1);
+    position: relative;
+  }
+  
+  .hero h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  
+  .hero img {
+    max-width: 60%;
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .content h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .content p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .content img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  
+  .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .content ul li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+/* 3D section styles */
+.section-3D {
+    background-color: #fff;
+    padding: 2rem 0;
+}
+
+.container3D {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.colored-div {
+    padding: 2rem;
+    position: relative;
+}
+
+/* 3D model container styles */
+x3d {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Text and buttons container styles */
+.text-buttons3D {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.text3D {
+    margin-bottom: 1rem;
+}
+
+.text3D p {
+    text-align: center;
+}
+
+.buttons3D {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.buttons3D button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buttons3D button:hover {
+    background-color: #555;
+}
+
+
+/* 
+  For Footer  */
+  #contact a {
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    color: #999;
+  }
+  
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-box {
+    text-align: center;
+}
+
+.logoMini{
+  margin-right: 1rem;
+}
+  
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(11, 11, 11, 0.9);
+  padding: 1rem;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 1rem;
+  
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: rgb(229, 223, 223);
+  font-weight: 600;
+
+}
+
+nav ul li a:hover {
+  color: #999;
+}
+
+.nav-links {
+    display: block;
+  }
+
+  /* Styles for phone screens */
+  @media only screen and (max-width: 767px) {
+    nav ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }

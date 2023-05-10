@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/style copy.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <title>Small Statements</title>
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <div class="nav-links">
+                <ul>
+
+
+
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <a href="#" class="logoMini"><img margin-right="100px" width="190px" height="auto" src="../assets/whiteCokeLogo.png" alt="Logo"></a>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section id="home" class="hero">
+            <h1>Statement of Originality</h1>
+        </section>
+
+        <section id="contact" class="content">
+            <div class="content-wrapper2">
+                <div class="text-box2">
+                    <h2>Statment Of Originality</h2>
+                    <p>These web pages are submitted as part requirement for the degree of Computer Science at the University of Sussex.  They are the product of my own labour except where indicated in the web page content. These web pages or contents may be freely copied and distributed provided the source is acknowledged". </p>
+                </div>
+
+                <div class="text-box3">
+                    <h2>Refreneces</h2>
+                    <p>
+                        W3Schools (n.d.). HTML Responsive Web Design. [online] W3schools.com. Available at: https://www.w3schools.com/html/html_responsive.asp.<br>
+BlenderGuru (2021). Blender Beginner Tutorial - Part 1. [online] www.youtube.com. Available at: https://www.youtube.com/watch?v=nIoXOplUvAw&ab_channel=BlenderGuru [Accessed 26 Apr. 2023].</br>Brutzman, D. (2023). X3D Resources. [online] www.web3d.org. Available at: https://www.web3d.org/x3d/content/examples/X3dResources.html#Applications [Accessed 2 May 2023].<br>
+Brutzman, D. (2023). X3D Resources. [online] www.web3d.org. Available at: https://www.web3d.org/x3d/content/examples/X3dResources.html#Applications [Accessed 2 May 2023].<br>Stack Overflow. (2020). fileapi - How to combine an uploaded X3D file with an inline node? [online] Available at: https://stackoverflow.com/questions/58961973/how-to-combine-an-uploaded-x3d-file-with-an-inline-node [Accessed 10 May 2023].
+<br>W3SCHOOLS (2023). CSS Tutorial. [online] W3schools.com. Available at: https://www.w3schools.com/css/.<br> W3Schools (n.d.). HTML Responsive Web Design. [online] W3schools.com. Available at: https://www.w3schools.com/html/html_responsive.asp. <br>
+www.w3schools.com. (2023). JavaScript DOM Animate. [online] Available at: https://www.w3schools.com/js/js_htmldom_animate.asp.
+</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        // Smooth scrolling
+        $('a[href*="#"]').on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top - 60,
+                },
+                600,
+                'linear'
+            );
+        });
+    </script>
+</body>
+
+</html>
