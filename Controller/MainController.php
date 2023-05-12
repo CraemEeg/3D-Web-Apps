@@ -15,7 +15,7 @@ class MainController
         require_once("views/index.php");
     }
 
-    public function coke($index)
+    public function coke()
     {
         if (isset($_GET['id'])) {
             $product_id = intval($_GET['id']);

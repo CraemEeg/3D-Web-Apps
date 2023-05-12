@@ -10,7 +10,8 @@ $dbname = "mvc";
 
 $conn = Connection::getInstance($servername, $username, $password, $dbname);
 $model = new ProductModel($conn);
+
 $controller = new MainController($model);
 
 
-$controller->coke($index);
+$controller->coke();

@@ -24,7 +24,7 @@
 
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <a href="#" class="logoMini"><img margin-right="100px" width="190px" height="auto" src="./assets/whiteCokeLogo.png" alt="Logo"></a>
+                    <a href="#" class="logoMini"><img margin-right="100px" width="240px" height="auto" src="./assets/whiteCokeLogo.png" alt="Logo"></a>
                     <li><a href="#products">Products</a></li>
                     <li><a href="#contact">Contact</a></li>
 
@@ -49,7 +49,7 @@
         <section id="about" class="content">
 
             <div class="content-wrapperV">
-                <iframe class="video-box" width="100%" height="auto" src="https://www.youtube.com/embed/JlBex2H7lAA" title="YouTube video player" frameborder="50" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe class="video-box" width="100%" height="420px" src="https://www.youtube.com/embed/JlBex2H7lAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
                 <div class="text-box2">
                     <br>
@@ -73,7 +73,7 @@
                         <h3><?php echo htmlspecialchars($product['name']); ?></h3>
                         <p><?php echo htmlspecialchars($product['description']); ?></p>
 
-                        <?php $index = $product['id'] ?>
+                        <?php $index = $product['Id'] ?>
                         <a href="<?php echo htmlspecialchars($product['btnLink']) . '?id=' . urlencode($index); ?>" class="btn" style="background-color: <?php echo htmlspecialchars($product['btnCol']); ?>;">Click Here!</a>
 
                     </div>
@@ -91,15 +91,15 @@
             <div class="content-wrapper">
                 <div class="text-box">
                     <h2>Links</h2>
+                    <p>To the right you will notice a Cat Image API! Enjoy :)</p>
                     <p>For acknowledgements, please visit our <a href="views/stmnt.html">Statement of Originality, Acknowledgements, References</a> page.</p>
-                    <p>Access to my source code is available at this <a href="views/stmnt.html">Github</a></p>
-                    <p>Access to my X3D Models are availble at this <a href="views/stmnt.html">Github</a></p>
+
+                    <p>Access to my source code is available at this <a href="https://github.com/CraemEeg/3D-Web-Apps">Github</a></p>
+                    <p>Access to my X3D Models are availble at this <a href="https://github.com/CraemEeg/X3D-Models-3D-Web-Apps">Github</a></p>
 
                 </div>
-                <div class="stacked-images">
-                    <img src="https://via.placeholder.com/200x200/ff7f7f/333" alt="Sample Image 7">
-                    <img src="https://via.placeholder.com/200x200/7f7fff/333" alt="Sample Image 8">
-                    <img class="rotating" src="https://via.placeholder.com/200x200/7fff7f/333" alt="Sample Image 9">
+                <div class="">
+                    <img class="cats" src="https://cataas.com/cat/says/Hope%20You%20Enjoyed%20My%20Web%203D%20Assignment?size=250&color=white" alt="Sample Image 9">
                 </div>
             </div>
         </section>

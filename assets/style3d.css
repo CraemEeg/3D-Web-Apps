@@ -15,7 +15,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(11, 11, 11, 0.9);
+    background-color: rgba(11, 11, 11, 1);
     padding: 1rem;
     z-index: 100;
   }
@@ -30,6 +30,8 @@
   nav ul li {
     font-family: 'Roboto', sans-serif;
     margin-right: 1rem;
+    align-self: center;
+    
   }
   
   nav ul li:last-child {
@@ -202,6 +204,7 @@ x3d {
 
 .logoMini{
   margin-right: 1rem;
+  align-self: center;
 }
   
 
@@ -223,6 +226,7 @@ nav ul {
 
 nav ul li {
   margin-right: 1rem;
+  align-self: center;
   
 }
 
@@ -255,3 +259,175 @@ nav ul li a:hover {
       flex-direction: column;
     }
   }
+
+
+  
+  .rotating {
+    animation: rotation 30s infinite linear;
+  }
+  
+  .opRotating {
+    animation: opRotation 10s infinite linear;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes opRotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  /* Add media query for responsiveness */
+  @media (max-width: 768px) {
+    .content-wrapper {
+      flex-direction: column;
+    }
+    
+    .text-box {
+      max-width: 100%;
+    }
+    
+    .stacked-images {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  
+  /* Add the following styles at the end of the file */
+  #app {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+  }
+  
+  .app-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .app-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .store-logos img {
+    width: 135px;
+    height: auto;
+    margin: 0.5rem;
+  }
+  
+  /* Add media query for responsiveness */
+  @media (max-width: 768px) {
+    .app-images {
+      margin-top: 1rem;
+    }
+  }
+  
+  #app h2 {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .content-wrapper.reverse {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .text-box {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .stacked-images {
+      width: 300px;
+      height: 300px;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .stacked-images img:nth-child(1) {
+      top: 0;
+      left: 52px;
+    }
+  
+    .stacked-images img:nth-child(2) {
+      top: 0px;
+      max-height: 90%;
+      width: auto;
+      left: 0;
+    }
+  
+    .stacked-images img:nth-child(3) {
+      top: 100px;
+      left: 0;
+      transform: rotate(-0deg);
+    }
+  }
+  
+/* 
+  For Footer  */
+  #contact a {
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  #contact a:hover {
+    color: #999;
+  }
+  
+
+  #contact {
+    background-color: #f5f5f7;
+  }
+  
+  /* Add the following styles at the end of the file */
+  .stacked-images {
+    position: relative;
+    display: inline-block;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .stacked-images img {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    top: -45px;
+
+    /* border: 3px solid #333;
+    box-sizing: border-box;
+  } */
+  }
+  
+  
+  .stacked-images img:nth-child(1) {
+    
+    left: 0;
+  }
+  
+  .stacked-images img:nth-child(2) {
+ 
+    left: 50px;
+  }
+  
+  .stacked-images img:nth-child(3) {
+   
+    left: 100px;
+  }
+  

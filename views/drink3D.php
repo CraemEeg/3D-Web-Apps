@@ -54,7 +54,7 @@
                     </x3d>
 
                     <!-- Hidden input field for passing the specific 3d informaation to AJAX -->
-                    <input type="hidden" id="x3dURL" value="<?php echo htmlspecialchars($data['3D']); ?>">
+                    <input type="hidden" id="x3dURL" value="<?php echo htmlspecialchars($data['d3_model']); ?>">
 
 
 
@@ -81,11 +81,16 @@
         <section id="contact" class="content">
             <div class="content-wrapper">
                 <div class="text-box">
-                    <h2>Contact Us</h2>
-                    <p>If you have any questions or would like to place an order, please email us at: info@example.com</p>
+                    <h2>Links</h2>
+                    <p>For acknowledgements, please visit our <a href="views/stmnt.html">Statement of Originality, Acknowledgements, References</a> page.</p>
+                    <p>Access to my source code is available at this <a href="https://github.com/CraemEeg/3D-Web-Apps">Github</a></p>
+                    <p>Access to my X3D Models are availble at this <a href="https://github.com/CraemEeg/X3D-Models-3D-Web-Apps">Github</a></p>
+
                 </div>
+
             </div>
         </section>
+
     </main>
 
     <script>

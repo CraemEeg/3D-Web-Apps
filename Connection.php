@@ -15,7 +15,10 @@ class Connection
 
         if (!self::$instance) {
             try {
-                self::$instance = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+
+                $dsn = 'sqlite:./db/test5.db';
+
+                self::$instance = new PDO($dsn, "user", "password");
                 self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             } catch (PDOException $e) {
                 echo "Connection failed: " . $e->getMessage();
